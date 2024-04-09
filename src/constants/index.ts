@@ -1,8 +1,8 @@
 export const MENU_ITEMS = [
-  { id: 0, label: "O nás", type: "text" },
-  { id: 1, label: "Okna a dveře", type: "text" },
-  { id: 2, label: "Ke stažení", type: "text" },
-  { id: 3, label: "Kontakt", type: "button" }
+  { id: 0, label: "O nás", type: "text", href: "/" },
+  { id: 1, label: "Okna a dveře", type: "text", href: "/windows" },
+  { id: 2, label: "Ke stažení", type: "text", href: "/download" },
+  { id: 3, label: "Kontakt", type: "button", href: "#contact" }
 ];
 
 export const NAVIGACE = [

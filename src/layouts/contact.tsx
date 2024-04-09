@@ -6,7 +6,7 @@ import LogoImg from "@/assets/logo2.png";
 
 const Contact = () => {
   return (
-    <div className="flex items-center border-t-[8px] border-b-[8px] border-primary">
+    <div className="flex items-center border-t-[8px] border-b-[8px] border-primary" id="contact">
       <div className="w-1/2 flex justify-end">
         <div className="w-[680px]">
           <p className="text-black font-700 text-[60px]">{"Máte zájem o výrobky značky Rehau?"}</p>

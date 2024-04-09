@@ -5,6 +5,7 @@ import Image from "next/image";
 import LogoImg from "@/assets/logo.png";
 import { MENU_ITEMS } from "@/constants";
 import Container from "@/components/Container";
+import Link from "next/link";
 
 const Header = () => {
   return (
@@ -17,18 +18,19 @@ const Header = () => {
           {MENU_ITEMS.map((item) => {
             if (item.type === "text") {
               return (
-                <p className="text-main-900 text-[25px] font-500 cursor-pointer" key={`menu-${item.id}`}>
-                  {item.label}
-                </p>
+                <Link href={item.href}>
+                  <p className="text-main-900 text-[25px] font-500 cursor-pointer" key={`menu-${item.id}`}>
+                    {item.label}
+                  </p>
+                </Link>
               );
             } else {
               return (
-                <button
-                  className="text-white bg-primary text-[25px] font-500 rounded-[50px] px-10"
-                  key={`menu-${item.id}`}
-                >
-                  {item.label}
-                </button>
+                <Link href={item.href} key={`menu-${item.id}`}>
+                  <button className="text-white bg-primary text-[25px] font-500 rounded-[50px] px-10">
+                    {item.label}
+                  </button>
+                </Link>
               );
             }
           })}
