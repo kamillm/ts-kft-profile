@@ -43,3 +43,10 @@ html {
   transform: rotate(3deg) translate(0px, -4px);
   box-shadow: 0 0 10px #dd222a 0 0 5px #dd222a;
 }
+
+table tr {
+  border-bottom: 1px solid #7a7a7a;
+}
+td {
+  padding: 10px;
+}

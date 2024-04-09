@@ -9,7 +9,7 @@ const DownloadView = () => {
       <p className="font-700 text-[45px] text-black text-center">{"Soubory ke stažení"}</p>
       <div className="flex space-x-10">
         {[1, 2, 3, 4].map((item) => (
-          <div className="w-[215px]">
+          <div className="w-[215px]" key={`download-${item}`}>
             <div className="bg-main-900 w-full py-10 inline-flex justify-center items-center">
               <Image src={PDFImg} className="w-[40px] h-[46px]" alt="pdf" />
             </div>

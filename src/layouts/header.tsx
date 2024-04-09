@@ -18,10 +18,8 @@ const Header = () => {
           {MENU_ITEMS.map((item) => {
             if (item.type === "text") {
               return (
-                <Link href={item.href}>
-                  <p className="text-main-900 text-[25px] font-500 cursor-pointer" key={`menu-${item.id}`}>
-                    {item.label}
-                  </p>
+                <Link href={item.href} key={`menu-${item.id}`}>
+                  <p className="text-main-900 text-[25px] font-500 cursor-pointer">{item.label}</p>
                 </Link>
               );
             } else {
