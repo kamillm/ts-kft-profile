@@ -3,7 +3,7 @@ import Image from "next/image";
 
 import ItemImg from "@/assets/item.png";
 import Container from "@/components/Container";
-import { DownArrowIcon } from "@/assets/svg";
+import { DownArrowIcon } from "@/assets/Icons";
 
 const Product = () => {
   return (

@@ -17,7 +17,7 @@ const BannerView = () => {
   }, [type]);
 
   return (
-    <div>
+    <div id="product-banner">
       <div className="relative h-[808px]">
         <Image src={BannerImge} fill alt="home-banner" />
 
