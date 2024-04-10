@@ -9,7 +9,7 @@ const KindCard: React.FC<KindCardProps> = ({ title, description, kindlabel, subl
         <p className="text-[25px] font-400 mac:text-[20px] small:text-[15px]">{description}</p>
         <p className="text-[20px] font-700 mac:text-[15px] small:text-[10px]">{sublabel}</p>
       </div>
-      <div className="absolute text-white bg-primary text-[20px] font-600 bottom-0 right-0 px-4 py-1 rounded-tl-full mac:text-[15px] small:text-[10px]">
+      <div className="absolute text-white bg-primary hover:bg-red-100 cursor-pointer text-[20px] font-600 bottom-0 right-0 px-4 py-1 rounded-tl-full mac:text-[15px] small:text-[10px]">
         {kindlabel}
       </div>
     </div>

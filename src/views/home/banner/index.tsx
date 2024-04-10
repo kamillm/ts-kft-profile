@@ -17,7 +17,7 @@ const BannerView = () => {
                 {"Kvalitní okna od výrobce Rehau v nejlepším poměru cena:výkon"}
               </p>
             </div>
-            <button className="bg-primary text-white px-10 py-1 text-[30px] font-600 rounded-[50px] w-[383px] mac:text-[20px] mac:w-[300px] small:text-[15px] small:w-[250px]">
+            <button className="bg-primary hover:bg-red-100 text-white px-10 py-1 text-[30px] font-600 rounded-[50px] w-[383px] mac:text-[20px] mac:w-[300px] small:text-[15px] small:w-[250px]">
               {"Druhy oken a dveří"}
             </button>
           </div>
