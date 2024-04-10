@@ -7,7 +7,7 @@ import { DownArrowIcon } from "@/assets/Icons";
 
 const Product = () => {
   return (
-    <Container>
+    <Container className="px-32 desktop:px-12 tablet:px-8 mobile:px-6 final:px-4">
       <div className="p-20">
         <div className="flex space-x-10">
           <div className="border-2 border-primary w-[553px] h-[553px]  shrink-0">

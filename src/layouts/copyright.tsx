@@ -3,10 +3,10 @@ import React from "react";
 
 const CopyRight = () => {
   return (
-    <div className="flex items-center justify-between text-main-900 text-[15px] font-400 px-[400px] py-4">
-      <div className="flex items-center space-x-3">
+    <div className="flex items-center justify-between text-main-900 text-[15px] font-400 py-4 px-[200px] desktop:flex-col desktop:space-y-1 desktop:text-[12px] desktop:px-0">
+      <div className="flex items-center space-x-3 small:flex-col small:space-y-1">
         <p>{"© 2024 KFT OKNA"}</p>
-        <div className="h-4 w-[2px] bg-main-900" />
+        <div className="h-4 w-[2px] bg-main-900 small:hidden" />
         <p>
           design & conent by{" "}
           <Link href={"https://stayon.cz/"} target="_blank" className="uppercase font-700 text-blue-100 cursor-pointer">
@@ -15,9 +15,9 @@ const CopyRight = () => {
           agency 2023
         </p>
       </div>
-      <div className="flex items-center space-x-3">
+      <div className="flex items-center space-x-3 small:flex-col small:space-y-1">
         <p>{"Zásady ochrany osobních údajů"}</p>
-        <div className="h-4 w-[2px] bg-main-900" />
+        <div className="h-4 w-[2px] bg-main-900 small:hidden" />
         <p>Nastavení Cookies</p>
       </div>
     </div>

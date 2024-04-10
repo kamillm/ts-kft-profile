@@ -43,7 +43,7 @@ const BannerView = () => {
               {"Okna a dveře Briliant-Design"}
             </div>
           </div>
-          <Container>
+          <Container className="px-32 desktop:px-12 tablet:px-8 mobile:px-6 final:px-4">
             {!type ? (
               <div className="pt-[200px]">
                 <KindCard

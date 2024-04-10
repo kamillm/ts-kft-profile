@@ -8,7 +8,7 @@ const Construction = () => {
   return (
     <div>
       <div className="bg-primary py-5">
-        <Container>
+        <Container className="px-32 desktop:px-12 tablet:px-8 mobile:px-6 final:px-4">
           <p className="font-600 text-[40px] text-white">{"Udržitelná výstavba – bez omezování pohodlí"}</p>
           <p className="font-400 text-[20px] text-white max-w-[1432px]">
             {
@@ -17,7 +17,7 @@ const Construction = () => {
           </p>
         </Container>
       </div>
-      <Container>
+      <Container className="px-32 desktop:px-12 tablet:px-8 mobile:px-6 final:px-4">
         <div className="px-20 py-10 flex flex-col space-y-10">
           <div>
             <p className="font-600 text-[30px] text-black">{"Dobrý pocit"}</p>
