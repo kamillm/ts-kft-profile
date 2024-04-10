@@ -8,12 +8,12 @@ const KindView = () => {
   return (
     <div>
       <div className="bg-primary h-2" />
-      <div className="relative h-[894px]">
-        <Image src={RehuaBannerImg} fill alt="rehua-banner" />
+      <div className="relative h-[894px] desktop:h-[700px] tablet:h-[600px] small:h-[800px]">
+        <Image src={RehuaBannerImg} fill alt="rehua-banner" className="w-full h-full object-cover" />
 
-        <div className="bg-black/50 absolute w-full h-full flex">
-          <div className="w-1/2 flex items-center justify-end">
-            <div className="w-fit pb-[150px] pr-[50px]">
+        <div className="bg-black/50 absolute w-full h-full flex desktop:flex-col desktop:space-y-10 desktop:items-center desktop:justify-center desktop:px-10 small:px-5">
+          <div className="w-1/2 flex items-center justify-end desktop:w-full">
+            <div className="w-fit pb-[150px] pr-[50px] desktop:p-0">
               <KindCard
                 title="Okna SYNEGO"
                 description="SYNEGO - tento okenní systém zajišťuje příjemné teplo a aktivně přispívá, vzhledem k téměř o 45 % vyšší tepelné izolaci, k ochraně životního prostředí."
@@ -22,8 +22,8 @@ const KindView = () => {
               />
             </div>
           </div>
-          <div className="w-1/2 flex items-center justify-start">
-            <div className="w-fit pt-[150px] pl-[50px]">
+          <div className="w-1/2 flex items-center justify-start desktop:w-full">
+            <div className="w-fit pt-[150px] pl-[50px] desktop:p-0">
               <KindCard
                 title="Okna Brillant-Design"
                 description="Brillant-Design - tento okenní systém nabízí obrovský výběr barev a tvarů, excelentní zvukovou izolaci a díky perfektní tepelné izolaci Vám zajistí skvělé domáci pohodlí."

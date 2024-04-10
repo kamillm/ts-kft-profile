@@ -50,3 +50,9 @@ table tr {
 td {
   padding: 10px;
 }
+
+@media only screen and (max-width: 640px) {
+  td {
+    font-size: 15px;
+  }
+}

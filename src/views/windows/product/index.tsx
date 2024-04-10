@@ -8,52 +8,54 @@ import { DownArrowIcon } from "@/assets/Icons";
 const Product = () => {
   return (
     <Container className="px-32 desktop:px-12 tablet:px-8 mobile:px-6 final:px-4">
-      <div className="p-20">
-        <div className="flex space-x-10">
-          <div className="border-2 border-primary w-[553px] h-[553px]  shrink-0">
-            <Image src={ItemImg} width={553} height={553} alt="item" />
+      <div className="py-20">
+        <div className="flex space-x-10 items-center desktop:flex-col desktop:space-x-0 desktop:space-y-10">
+          <div className="border-2 border-primary w-[553px] h-[553px] shrink-0 mac:w-[400px] mac:h-[400px] mobile:w-[300px] mobile:h-[300px]">
+            <Image src={ItemImg} width={553} height={553} alt="item" className="w-full h-full object-cover" />
           </div>
 
           <div className="flex flex-col space-y-5 justify-end ">
-            <p className="font-600 text-[40px] text-black">{"Okna SYNEGO"}</p>
-            <p className="font-600 text-[25px] text-black">
+            <p className="font-600 text-[40px] text-black mac:text-[35px]">{"Okna SYNEGO"}</p>
+            <p className="font-600 text-[25px] text-black mac:text-[20px]">
               {"Systém PVC se stavební hloubkou 80 mm a hodnotou Uf až 0,94 W/m²K"}
             </p>
-            <p className="font-400 text-[20px] text-black">
+            <p className="font-400 text-[20px] text-black mac:text-[15px]">
               {
                 "Okna SYNEGO jsou nejlepší volbou pro zákazníky, které zajímá energeticky úsporný provoz. Vedle hodnoty Uf činící až 0,94 W/m²K se tento systém prosazuje svojí úsporností a různorodými designovými variantami."
               }
             </p>
 
             <div className="bg-primary text-white p-5">
-              <p className="text-[30px] font-700">{"Vaše výhody:"}</p>
+              <p className="text-[30px] mac:text-[25px] font-700">{"Vaše výhody:"}</p>
               <ul className="list-disc pl-10">
-                <li className="p-2">
+                <li className="p-1">
                   {"Více místa ve skladu, neboť lze u systému SYNEGO používat dvě varianty těsnění."}
                 </li>
-                <li className="p-2">{"Široká paleta profilů"}</li>
-                <li className="p-2">
+                <li className="p-1">{"Široká paleta profilů"}</li>
+                <li className="p-1">
                   {
                     "V nabídce ve všech barevných odstínech i s novým sklolaminátovým povrchem KALEIDO VISION pro interiérový nábytek"
                   }
                 </li>
-                <li className="p-2">{"Ekologický, recyklovatelný systém"}</li>
+                <li className="p-1">{"Ekologický, recyklovatelný systém"}</li>
               </ul>
             </div>
           </div>
         </div>
-        <p className="relative font-600 text-black text-[30px] text-center py-10 underline decoration-primary">
+        <p className="relative font-600 text-black text-[30px]  mac:text-[25px] text-center py-10 underline decoration-primary">
           {"Technická data"}
           <div className="absolute left-1/2 -translate-x-1/2">
             <DownArrowIcon />
           </div>
         </p>
 
-        <div className="flex space-x-10">
-          <table className="w-1/2">
+        <div className="flex space-x-10 desktop:flex-col desktop:space-x-0 desktop:space-y-10">
+          <table className="w-1/2 desktop:w-full">
             <thead>
               <tr>
-                <td className="row-span-2 text-danger text-[25px] font-600 text-primary">{"Všeobecné informace"}</td>
+                <td colSpan={2} className="text-danger text-[25px] font-600 text-primary">
+                  {"Všeobecné informace"}
+                </td>
               </tr>
             </thead>
             <tbody>
@@ -92,10 +94,12 @@ const Product = () => {
             </tbody>
           </table>
 
-          <table className="w-1/2">
+          <table className="w-1/2 desktop:w-full">
             <thead>
               <tr>
-                <td className="row-span-2 text-danger text-[25px] font-600 text-primary">{"Vlastnosti"}</td>
+                <td colSpan={2} className="text-danger text-[25px] font-600 text-primary">
+                  {"Vlastnosti"}
+                </td>
               </tr>
             </thead>
             <tbody>
