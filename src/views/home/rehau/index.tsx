@@ -14,7 +14,7 @@ const RehauView = () => {
       <div className="w-1/2 tablet:w-full">
         <div className="flex flex-col space-y-5 items-start">
           <div className="bg-primary h-2 w-[80%]" />
-          <p className="text-[65px] text-black font-700 mac:text-[50px]">{"O výrobci Rehau"}</p>
+          <p className="text-[65px] text-black font-700 mac:text-[50px] mobile:text-[30px]">{"O výrobci Rehau"}</p>
           <p className="text-[30px] text-black font-400 mac:text-[20px]">
             {
               "Jsme inovativní marketingová a digitální agentura, zaměřená na poskytování kreativních řešení a strategií, které pomáhají našim klientům dosáhnout svých obchodních cílů."
