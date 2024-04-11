@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import clsx from "clsx";
 import Image from "next/image";
 import { useKind } from "@/contexts/KindProvider";
@@ -11,41 +11,35 @@ import Container from "@/components/Container";
 const BannerView = () => {
   const { kind, setKind } = useKind();
 
-  const [type, setType] = useState(kind);
-
-  useEffect(() => {
-    setKind(type);
-  }, [type]);
-
   return (
     <div id="product-banner">
       <div className="relative h-[808px] desktop:h-[700px] tablet:h-[600px]">
-        <Image src={!type ? BannerImg1 : BannerImg2} fill alt="home-banner" className="object-cover" />
+        <Image src={!kind ? BannerImg1 : BannerImg2} fill alt="home-banner" className="object-cover" />
 
         <div className="bg-black/50 absolute w-full h-full py-20">
           <div className="flex items-center justify-center small:flex-col">
             <div
-              onClick={() => setType(!type)}
+              onClick={() => setKind(!kind)}
               className={clsx(
                 "cursor-pointer text-white text-[20px] font-700 p-2 w-[308px] desktop:w-[230px] desktop:text-[15px]",
-                !type ? "bg-primary" : "bg-main-900"
+                !kind ? "bg-primary" : "bg-main-900"
               )}
             >
               {"Okna a dveře SYNEGO"}
             </div>
             <div className="bg-white w-1 h-[46px] desktop:h-[38px] small:w-[230px] small:h-1" />
             <div
-              onClick={() => setType(!type)}
+              onClick={() => setKind(!kind)}
               className={clsx(
                 "cursor-pointer text-white text-[20px] font-700 p-2 w-[308px] text-right desktop:w-[230px] desktop:text-[15px]",
-                type ? "bg-primary" : "bg-main-900"
+                kind ? "bg-primary" : "bg-main-900"
               )}
             >
               {"Okna a dveře Briliant-Design"}
             </div>
           </div>
           <Container className="px-32 desktop:px-12 tablet:px-8 mobile:px-6 final:px-4">
-            {!type ? (
+            {!kind ? (
               <div className="pt-[200px] tablet:pt-[100px]">
                 <KindCard
                   title="Okna SYNEGO"

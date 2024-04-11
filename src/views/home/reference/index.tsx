@@ -33,21 +33,6 @@ const referenceData1 = [
   }
 ];
 
-const referenceData2 = [
-  {
-    id: 4,
-    title: "Šárka Němcová",
-    description:
-      "Díky novým oknům od této společnosti se nám podařilo výrazně snížit náklady na vytápění. Jsme rádi, že jsme se rozhodli pro tuto investici."
-  },
-  {
-    id: 5,
-    title: "Jakub Němec",
-    description:
-      "Okna od této firmy jsme si nechali nainstalovat do našeho nového rodinného domu a jsme nadmíru spokojeni. Kvalita je skvělá a cena byla velmi přijatelná."
-  }
-];
-
 const ReferenceView = () => {
   return (
     <div>
@@ -60,8 +45,8 @@ const ReferenceView = () => {
       <div className="flex flex-col space-y-10 p-20">
         <div className="flex justify-center flex-wrap px-20 desktop:px-0">
           {referenceData1.map((item) => (
-            <div className="p-5 mobile:px-0">
-              <FeedBackCard key={`feedback-${item.id}`} {...item} />
+            <div className="p-5 mobile:px-0" key={`feedback-${item.id}`}>
+              <FeedBackCard {...item} />
             </div>
           ))}
         </div>

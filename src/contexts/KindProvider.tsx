@@ -15,7 +15,7 @@ export function KindProvider({ children }: any) {
       kind,
       setKind
     }),
-    [setKind]
+    [kind]
   );
 
   return <KindContext.Provider value={{ ...kindTypePackage }}>{children}</KindContext.Provider>;

@@ -1,19 +1,33 @@
-import { Inter } from "next/font/google";
-import { BannerView, ConstructionView, ProductView, ScrollTopView } from "@/views/windows";
+import { BannerView, ProductView, ScrollTopView } from "@/views/windows";
+import { DESIGNS, PRODUCTS } from "@/utils";
+import { useKind } from "@/contexts/KindProvider";
+import { useEffect, useState } from "react";
 
-const inter = Inter({ subsets: ["latin"] });
+export default function Windows() {
+  const { kind } = useKind();
 
-export default function Home() {
+  const [Package, setPackage] = useState<any>([]);
+
+  useEffect(() => {
+    if (!kind) {
+      setPackage(PRODUCTS);
+    } else {
+      setPackage(DESIGNS);
+    }
+  }, [kind]);
+  console.log(kind);
+
   return (
     <>
       <BannerView />
+      {/* <ConstructionView />
       <ConstructionView />
-      <ConstructionView />
-      <ConstructionView />
-      <ProductView />
-      <ProductView />
-      <ProductView />
-      {/* <ScrollTopView /> */}
+      <ConstructionView /> */}
+      {Package.map((item: any, index: number) => (
+        <ProductView key={`product-${index}`} item={item} />
+      ))}
+
+      <ScrollTopView />
     </>
   );
 }

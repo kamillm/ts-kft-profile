@@ -17,25 +17,21 @@ const KFTView = () => {
           <div className="w-[125px] h-[125px] bg-primary rounded-full inline-flex items-center justify-center">
             <Image src={FactoryImg} width={65} height={65} alt="factory" />
           </div>
-          <p className="text-black font-700 text-[30px]  mac:text-[25px] text-center">
-            {"Jeden z nejlepších výrobců na trhu"}
-          </p>
+          <p className="text-black font-700 text-[30px]  mac:text-[25px] text-center">{"Jsme inovativní"}</p>
           <p className="text-black font-400 text-[20px]  mac:text-[15px] text-center">
             {
-              "Stamilionový nemovitý majetek, kapitálové zázemí a prokazatelná dlouholetá ekonomická stabilita KFT Jičín jsou pro zákazníky zárukou, že firma vždy dostojí svým závazkům."
+              "Jsme inovativní společnost zaměřená na kvalitu výrobků, moderní design a precizní služby směrem k zákazníkům."
             }
           </p>
         </div>
 
         <div className="w-[320px] desktop:w-full flex flex-col items-center space-y-3">
           <div className="w-[125px] h-[125px] bg-primary rounded-full inline-flex items-center justify-center">
-            <p className="text-white font-700 text-[80px]">3</p>
+            <p className="text-white font-700 text-[80px]">5</p>
           </div>
-          <p className="text-black font-700 text-[30px]  mac:text-[25px] text-center">{"Záruka 3 roky"}</p>
+          <p className="text-black font-700 text-[30px]  mac:text-[25px] text-center">{"Záruka 5 let"}</p>
           <p className="text-black font-400 text-[20px]  mac:text-[15px] text-center">
-            {
-              "Na všechny výrobky dodávané KFT Okna standardně poskytujeme tří letou záruku. Zakazníkům nabízíme i prodloužení záruky až na deset let."
-            }
+            {"Naši zákazníci k montáži získavají záruku 5 let. Pro obchodní partnery máme záruku na 2 roky."}
           </p>
         </div>
 
@@ -43,12 +39,10 @@ const KFTView = () => {
           <div className="w-[125px] h-[125px] bg-primary rounded-full inline-flex items-center justify-center">
             <Image src={HandImg} width={65} height={65} alt="factory" />
           </div>
-          <p className="text-black font-700 text-[30px]  mac:text-[25px] text-center">
-            {"Nejlepší okna v poměru cena:výkon"}
-          </p>
+          <p className="text-black font-700 text-[30px]  mac:text-[25px] text-center">{"Optimální volba"}</p>
           <p className="text-black font-400 text-[20px]  mac:text-[15px] text-center">
             {
-              "Víc jak polovinu své produkce KFT Jičín vyváží do západní Evropy, zejména do Německa. Svým domácím zákazníkům nabízí evropskou kvalitu za české ceny."
+              "Naše firma vám poskytuje vynikající kvalitu oken za rozumnou cenu, abyste si mohli užívat komfort a styl vašeho domova bez zbytečných výdajů."
             }
           </p>
         </div>

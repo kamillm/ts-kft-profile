@@ -12,12 +12,12 @@ const NasView = () => {
           <p className="text-[65px] text-black font-700 mac:text-[55px]  mobile:text-[30px]">{"O nás"}</p>
           <p className="text-[30px] text-black font-400 mac:text-[20px]">
             {
-              "Jsme inovativní marketingová a digitální agentura, zaměřená na poskytování kreativních řešení a strategií, které pomáhají našim klientům dosáhnout svých obchodních cílů."
+              "Naše okna REHAU Synego jsou vyráběna s největší technologickou přesností na nejdokonalejších strojích a zaručují tím maximální bezpečnost, komfort, těsnost a především životnost."
             }
             <br />
             <br />
             {
-              "S vášní a zkušenostmi v oboru se snažíme vytvářet silné propojení mezi značkami a jejich cílovým publikem, abychom podpořili jejich růst a úspěch. Jsme tu pro vás, abychom společně vytvořili příběh, který osloví a zanechá trvalý dojem."
+              "Tím přináší našim zákazníkům minimální starosti o jejich péči a zároveň eliminují vysoké náklady za energie, čímž nadmíru podporují celosvětovou ekologii. Plníme veškerá přání a očekávání našich klientů, samozřejmě v nejvyšší kvalitě a nízké cenové hladině."
             }
           </p>
         </div>

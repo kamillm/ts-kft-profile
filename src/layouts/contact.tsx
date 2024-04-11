@@ -2,7 +2,6 @@ import React from "react";
 import Image from "next/image";
 
 // @assets
-import ContentImg from "@/assets/banner-image.png";
 import LogoImg from "@/assets/logo2.png";
 
 const Contact = () => {
@@ -11,10 +10,10 @@ const Contact = () => {
       <div className="w-1/2 flex justify-end tablet:w-full px-10 tablet:p-10">
         <div className="w-[680px] tablet:w-full">
           <p className="text-black font-700 text-[60px] mac:text-[45px] tablet:text-[30px]">
-            {"Máte zájem o výrobky značky Rehau?"}
+            {"Máte zájem o cenovou kalkulaci?"}
           </p>
           <p className="text-black font-300 text-[60px] mac:text-[45px] tablet:text-[30px]">
-            {"Vyplňte nezávazně formulář a my se vám ozveme."}
+            {"Vyplňte nezávazně formulář, ozveme se Vám do 48 hodin."}
           </p>
         </div>
       </div>
