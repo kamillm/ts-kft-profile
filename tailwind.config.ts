@@ -38,7 +38,7 @@ const config: Config = {
       main: {
         100: "#1B1B1B",
         200: "#2B2B2B",
-        300: "#3B3B3B",
+        300: "#F6F6F6",
         400: "#CCCCCC",
         900: "#7A7A7A "
       },
@@ -66,6 +66,9 @@ const config: Config = {
         900: "#00000090",
         DEFAULT: "#000000"
       }
+    },
+    backgroundImage: {
+      contactBanner: "url('/rehau-banner.png')"
     }
   },
   plugins: []

@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 
 // @assets
+import ContentImg from "@/assets/banner-image.png";
 import LogoImg from "@/assets/logo2.png";
 
 const Contact = () => {
@@ -17,8 +18,9 @@ const Contact = () => {
           </p>
         </div>
       </div>
-      <div className="w-1/2 bg-primary flex items-center p-20 space-x-10 tablet:w-full tablet:space-x-0 mac:justify-center desktop:p-10">
-        <div className="flex flex-col space-y-10 w-full small:space-y-5">
+      <div className="relative w-1/2 bg-contactBanner bg-cover flex items-center p-20 space-x-10 tablet:w-full tablet:space-x-0 mac:justify-center desktop:p-10">
+        <div className="absolute w-full h-full bg-primary top-0 left-0 opacity-80" />
+        <div className="flex flex-col space-y-10 w-full small:space-y-5 z-10">
           <div className="flex items-start space-x-10 desktop:flex-col desktop:space-x-0 desktop:space-y-5">
             <div className="flex flex-col w-1/2 desktop:w-full">
               <p className="text-[20px] text-white font-400 tablet:text-[15px]">{"Jméno*"}</p>
@@ -52,7 +54,7 @@ const Contact = () => {
             />
           </div>
 
-          <button className="text-white text-[20px] font-800 rounded-[50px] bg-red-100 w-[230px] p-2 tablet:text-[15px]">
+          <button className="text-white text-[20px] font-800 rounded-[50px] bg-red-100 w-[230px] p-2 tablet:text-[15px] border border-main-400">
             {"Odeslat poptávku"}
           </button>
         </div>

@@ -17,12 +17,17 @@ const RehauView = () => {
           <p className="text-[65px] text-black font-700 mac:text-[50px] mobile:text-[30px]">{"O výrobci Rehau"}</p>
           <p className="text-[30px] text-black font-400 mac:text-[20px]">
             {
-              "Jsme inovativní marketingová a digitální agentura, zaměřená na poskytování kreativních řešení a strategií, které pomáhají našim klientům dosáhnout svých obchodních cílů."
+              "Okna a dveře od společnosti REHAU jsou vyráběny v prvotřídní kvalitě. PVC profily splňují přísné nízkoenergetické a pasivní normy. "
             }
             <br />
             <br />
             {
-              "S vášní a zkušenostmi v oboru se snažíme vytvářet silné propojení mezi značkami a jejich cílovým publikem, abychom podpořili jejich růst a úspěch. Jsme tu pro vás, abychom společně vytvořili příběh, který osloví a zanechá trvalý dojem."
+              "Za zmínku stojí vysoká škála barev, velmi široké portfolio produktů a vysoce kvalitní použitý materiál, to vše samozřejmě s ohledem na ekologickou stránku."
+            }
+            <br />
+            <br />
+            {
+              "Pro novostavby, nízkoenergetické a pasivní domy je ideální volbou profil Rehau Synego 80mm, v případě rekonstrukce se nabízí profil Rehau Brillant se stavební hloubkou 70 mm."
             }
           </p>
         </div>

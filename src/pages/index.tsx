@@ -1,5 +1,5 @@
 import { Inter } from "next/font/google";
-import { BannerView, KFTView, KindView, NasView, RehauView } from "@/views/home";
+import { BannerView, KFTView, KindView, NasView, ReferenceView, RehauView } from "@/views/home";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -11,6 +11,7 @@ export default function Home() {
       <KFTView />
       <KindView />
       <RehauView />
+      <ReferenceView />
     </>
   );
 }

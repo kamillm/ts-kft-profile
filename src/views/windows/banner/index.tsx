@@ -3,7 +3,8 @@ import clsx from "clsx";
 import Image from "next/image";
 import { useKind } from "@/contexts/KindProvider";
 
-import BannerImge from "@/assets/banner-image.png";
+import BannerImg1 from "@/assets/1.png";
+import BannerImg2 from "@/assets/2.png";
 import { KindCard } from "@/components/Card";
 import Container from "@/components/Container";
 
@@ -19,7 +20,7 @@ const BannerView = () => {
   return (
     <div id="product-banner">
       <div className="relative h-[808px] desktop:h-[700px] tablet:h-[600px]">
-        <Image src={BannerImge} fill alt="home-banner" className="object-cover" />
+        <Image src={!type ? BannerImg1 : BannerImg2} fill alt="home-banner" className="object-cover" />
 
         <div className="bg-black/50 absolute w-full h-full py-20">
           <div className="flex items-center justify-center small:flex-col">
