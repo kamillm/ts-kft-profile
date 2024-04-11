@@ -15,7 +15,6 @@ export default function Windows() {
       setPackage(DESIGNS);
     }
   }, [kind]);
-  console.log(kind);
 
   return (
     <>
