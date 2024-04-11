@@ -1,13 +1,25 @@
 import React from "react";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
+
 // @components
 import CopyRight from "./copyright";
 // @assets
 import LogoImg from "@/assets/logo.png";
 import RehauImg from "@/assets/rehau.png";
 import { KONAKT, NAVIGACE } from "@/constants";
+import { useKind } from "@/contexts/KindProvider";
 
 const Footer = () => {
+  const router = useRouter();
+  const { setKind } = useKind();
+
+  const onHandleRouter = (item: any) => {
+    if (item.id !== 2) {
+      setKind(item.type);
+    }
+    router.push(item.href);
+  };
   return (
     <div>
       <div className="px-20 py-14 flex tablet:flex-col tablet:space-y-5">
@@ -24,6 +36,7 @@ const Footer = () => {
             <p className="text-[25px] font-700 text-black tablet:text-[20px] mobile:text-center">Navigace</p>
             {NAVIGACE.map((item) => (
               <p
+                onClick={() => onHandleRouter(item)}
                 key={`navigate-${item.id}`}
                 className="text-[20px] text-black hover:underline cursor-pointer font-300 tablet:text-[15px]  mobile:text-center"
               >

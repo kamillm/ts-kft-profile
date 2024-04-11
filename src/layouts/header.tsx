@@ -15,16 +15,18 @@ const Header = () => {
   const [sidebar, setSidebar] = useState<boolean>(false);
   return (
     <Container className="px-32 desktop:px-12 tablet:px-8 mobile:px-6 final:px-4">
-      <div className="flex items-center justify-between py-2">
-        <div className="w-[298px] h-[106px] laptop:w-[198px] laptop:h-[70px] mobile:w-[150px] mobile:h-[53px]">
-          <Image src={LogoImg} width={298} height={106} alt="logo" />
-        </div>
+      <div className="flex items-center justify-between py-2" id="product-banner">
+        <Link href={"/"}>
+          <div className="w-[298px] h-[106px] laptop:w-[198px] laptop:h-[70px] mobile:w-[150px] mobile:h-[53px]">
+            <Image src={LogoImg} width={298} height={106} alt="logo" />
+          </div>
+        </Link>
         <div className="w-[55%] flex items-center justify-between mac:w-[60%] tablet:hidden">
           {MENU_ITEMS.map((item) => {
             if (item.type === "text") {
               return (
                 <Link href={item.href} key={`menu-${item.id}`}>
-                  <p className="text-main-900 text-[25px] font-500 cursor-pointer laptop:text-[15px] hover:underline">
+                  <p className="text-[#BEBEBE] hover:text-main-900 text-[25px] font-500 cursor-pointer laptop:text-[15px] hover:underline">
                     {item.label}
                   </p>
                 </Link>
@@ -59,7 +61,9 @@ const Header = () => {
               if (item.type === "text") {
                 return (
                   <Link href={item.href} key={`menu-${item.id}`} onClick={() => setSidebar(false)}>
-                    <p className="text-main-900 text-[20px] font-500 cursor-pointer hover:underline">{item.label}</p>
+                    <p className="text-[#BEBEBE] hover:text-main-900 text-[20px] font-500 cursor-pointer hover:underline">
+                      {item.label}
+                    </p>
                   </Link>
                 );
               } else {

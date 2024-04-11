@@ -6,14 +6,14 @@ export const MENU_ITEMS = [
 ];
 
 export const NAVIGACE = [
-  { id: 0, label: "Okna SYNEGO" },
-  { id: 1, label: "Okna Briliant design" },
-  { id: 2, label: "Ke stažení" }
+  { id: 0, label: "Okna SYNEGO", href: "/windows", type: false },
+  { id: 1, label: "Okna Briliant design", href: "/windows", type: true },
+  { id: 2, label: "Ke stažení", href: "/download" }
 ];
 
 export const KONAKT = [
   { id: 0, label: "+420 123 456 789" },
   { id: 1, label: "info@kftokna.cz" },
-  { id: 2, label: "IČO 1234567" },
-  { id: 3, label: "DIČ CZ1234567" }
+  { id: 2, label: "IČO 04789601" },
+  { id: 3, label: "DIČ CZ04789601" }
 ];

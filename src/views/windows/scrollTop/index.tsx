@@ -10,7 +10,7 @@ const ScrollTop = () => {
   return (
     <div className="flex flex-col items-center space-y-10 py-10">
       <Link href="#product-banner">
-        <div className="bg-primary w-[150px] h-[150px] rounded-full flex items-center justify-center flex-col cursor-pointer desktop:w-[100px] desktop:h-[100px]">
+        <div className="bg-primary hover:bg-red-100 w-[150px] h-[150px] rounded-full flex items-center justify-center flex-col cursor-pointer desktop:w-[100px] desktop:h-[100px]">
           <UpArrowIcon className="desktop:w-10 desktop:h-8" />
           <p className="font-600 text-[25px] text-white text-center desktop:text-[15px]">
             {"Zpět"}

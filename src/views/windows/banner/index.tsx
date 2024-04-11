@@ -12,7 +12,7 @@ const BannerView = () => {
   const { kind, setKind } = useKind();
 
   return (
-    <div id="product-banner">
+    <div>
       <div className="relative h-[808px] desktop:h-[700px] tablet:h-[600px]">
         <Image src={!kind ? BannerImg1 : BannerImg2} fill alt="home-banner" className="object-cover" />
 
@@ -42,6 +42,7 @@ const BannerView = () => {
             {!kind ? (
               <div className="pt-[200px] tablet:pt-[100px]">
                 <KindCard
+                  show={false}
                   title="Okna SYNEGO"
                   description="SYNEGO - tento okenní systém zajišťuje příjemné teplo a aktivně přispívá, vzhledem k téměř o 45 % vyšší tepelné izolaci, k ochraně životního prostředí."
                   sublabel="Nové vnímání oken. Pro moderní život."
@@ -51,6 +52,7 @@ const BannerView = () => {
             ) : (
               <div className="pt-[200px]  tablet:pt-[100px] float-end">
                 <KindCard
+                  show={false}
                   title="Okna Brillant-Design"
                   description="Brillant-Design - tento okenní systém nabízí obrovský výběr barev a tvarů, excelentní zvukovou izolaci a díky perfektní tepelné izolaci Vám zajistí skvělé domáci pohodlí."
                   sublabel="Designová okna pro vaše bydlení."

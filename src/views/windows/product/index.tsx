@@ -33,7 +33,7 @@ const Product = ({ item }: { item: any }) => {
           </div>
         </div>
         <p
-          onClick={() => setDrop(true)}
+          onClick={() => setDrop(!drop)}
           className="relative font-600 text-black text-[30px]  mac:text-[25px] text-center py-10 underline decoration-primary cursor-pointer"
         >
           {"Technická data"}

@@ -11,4 +11,5 @@ export interface KindCardProps {
   description: string;
   sublabel: string;
   kindlabel: string;
+  show?: boolean;
 }

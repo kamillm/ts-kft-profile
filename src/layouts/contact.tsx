@@ -53,11 +53,11 @@ const Contact = () => {
             />
           </div>
 
-          <button className="text-white text-[20px] font-800 rounded-[50px] bg-red-100 w-[230px] p-2 tablet:text-[15px] border border-main-400">
+          <button className="text-white text-[20px] font-800 rounded-[50px] bg-red-100 hover:bg-primary w-[230px] p-2 tablet:text-[15px] border border-main-400">
             {"Odeslat poptávku"}
           </button>
         </div>
-        <div className="[234px] h-[388px] mac:hidden inline-flex items-center justify-center">
+        <div className="[234px] h-[388px] mac:hidden inline-flex items-center justify-center z-10">
           <Image src={LogoImg} alt="logo" width={234} height={388} />
         </div>
       </div>
