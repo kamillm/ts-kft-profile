@@ -37,7 +37,7 @@ const ReferenceView = () => {
   return (
     <div>
       <div className="bg-primary">
-        <p className="text-white font-700 text-[50px] text-center mac:text-[45px] tablet:text-[40px] mobile:text-[30px]">
+        <p className="text-white font-700 text-[50px] text-center mac:text-[45px] tablet:text-[40px] mobile:text-[30px] py-1">
           {"Naši spokojení zákazníci"}
         </p>
       </div>
