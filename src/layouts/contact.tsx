@@ -53,7 +53,7 @@ const Contact = () => {
             />
           </div>
 
-          <button className="text-white text-[20px] font-800 rounded-[50px] bg-red-100 hover:bg-primary w-[230px] p-2 tablet:text-[15px] border border-main-400">
+          <button className="text-white text-[20px] font-800 rounded-[50px] bg-red-100 hover:bg-primary transition duration-300 w-[230px] p-2 tablet:text-[15px] border border-main-400">
             {"Odeslat poptávku"}
           </button>
         </div>

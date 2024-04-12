@@ -21,7 +21,7 @@ const BannerView = () => {
             <div
               onClick={() => setKind(!kind)}
               className={clsx(
-                "cursor-pointer text-white text-[20px] font-700 p-2 w-[308px] desktop:w-[230px] desktop:text-[15px]",
+                "cursor-pointer transition duration-300 text-white text-[20px] font-700 p-2 w-[308px] desktop:w-[230px] desktop:text-[15px]",
                 !kind ? "bg-primary hover:bg-red-100" : "bg-main-900 hover:bg-main-900/65"
               )}
             >
@@ -31,7 +31,7 @@ const BannerView = () => {
             <div
               onClick={() => setKind(!kind)}
               className={clsx(
-                "cursor-pointer text-white text-[20px] font-700 p-2 w-[308px] text-right desktop:w-[230px] desktop:text-[15px]",
+                "cursor-pointer transition duration-300 text-white text-[20px] font-700 p-2 w-[308px] text-right desktop:w-[230px] desktop:text-[15px]",
                 kind ? "bg-primary hover:bg-red-100" : "bg-main-900 hover:bg-main-900/65"
               )}
             >

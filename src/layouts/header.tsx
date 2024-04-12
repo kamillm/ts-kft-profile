@@ -26,7 +26,7 @@ const Header = () => {
             if (item.type === "text") {
               return (
                 <Link href={item.href} key={`menu-${item.id}`}>
-                  <p className="text-[#BEBEBE] hover:text-main-900 text-[25px] font-500 cursor-pointer laptop:text-[15px] hover:underline">
+                  <p className="text-[#BEBEBE] hover:text-main-900 transition duration-300 text-[25px] font-500 cursor-pointer laptop:text-[15px] hover:underline">
                     {item.label}
                   </p>
                 </Link>
@@ -34,7 +34,7 @@ const Header = () => {
             } else {
               return (
                 <Link href={item.href} key={`menu-${item.id}`}>
-                  <button className="text-white bg-primary text-[25px] font-500 rounded-[50px] px-10 laptop:text-[15px] laptop:px-5 hover:bg-red-100">
+                  <button className="text-white bg-primary transition duration-300 text-[25px] font-500 rounded-[50px] px-10 laptop:text-[15px] laptop:px-5 hover:bg-red-100">
                     {item.label}
                   </button>
                 </Link>
@@ -61,7 +61,7 @@ const Header = () => {
               if (item.type === "text") {
                 return (
                   <Link href={item.href} key={`menu-${item.id}`} onClick={() => setSidebar(false)}>
-                    <p className="text-[#BEBEBE] hover:text-main-900 text-[20px] font-500 cursor-pointer hover:underline">
+                    <p className="text-[#BEBEBE] hover:text-main-900  transition duration-300 text-[20px] font-500 cursor-pointer hover:underline">
                       {item.label}
                     </p>
                   </Link>
@@ -69,7 +69,7 @@ const Header = () => {
               } else {
                 return (
                   <Link href={item.href} key={`menu-${item.id}`} onClick={() => setSidebar(false)}>
-                    <button className="text-white bg-primary text-[20px] font-500 rounded-[50px] px-10 py-1 hover:bg-red-100">
+                    <button className="text-white bg-primary text-[20px] transition duration-300 font-500 rounded-[50px] px-10 py-1 hover:bg-red-100">
                       {item.label}
                     </button>
                   </Link>

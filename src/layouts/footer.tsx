@@ -38,7 +38,7 @@ const Footer = () => {
               <p
                 onClick={() => onHandleRouter(item)}
                 key={`navigate-${item.id}`}
-                className="text-[20px] text-black hover:underline cursor-pointer font-300 tablet:text-[15px]  mobile:text-center"
+                className="text-[20px] transition duration-300 text-black hover:underline cursor-pointer font-300 tablet:text-[15px]  mobile:text-center"
               >
                 {item.label}
               </p>
@@ -49,7 +49,7 @@ const Footer = () => {
             {KONAKT.map((item) => (
               <p
                 key={`konakt-${item.id}`}
-                className="text-[20px] text-black hover:underline cursor-pointer font-300 tablet:text-[15px]  mobile:text-center"
+                className="text-[20px] transition duration-300 text-black hover:underline cursor-pointer font-300 tablet:text-[15px]  mobile:text-center"
               >
                 {item.label}
               </p>
