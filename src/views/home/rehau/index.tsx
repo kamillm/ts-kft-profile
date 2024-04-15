@@ -13,10 +13,8 @@ const RehauView = () => {
       </div>
       <div className="w-1/2 tablet:w-full">
         <div className="flex flex-col space-y-5 items-start">
-          <p className="text-[65px] text-black font-700 mac:text-[50px] mobile:text-[30px] border-t-8 border-primary">
-            {"Výrobky Rehau"}
-          </p>
-          <p className="text-[30px] text-black font-400 mac:text-[20px]">
+          <p className="text-[35px] text-black font-700 border-t-8 border-primary">{"Výrobky Rehau"}</p>
+          <p className="text-[20px] text-black/75 font-400 mac:text-[20px]">
             {
               "Okna a dveře od společnosti REHAU jsou vyráběny v prvotřídní kvalitě. PVC profily splňují přísné nízkoenergetické a pasivní normy."
             }

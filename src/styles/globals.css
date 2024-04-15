@@ -4,6 +4,14 @@
 
 html {
   scroll-behavior: smooth;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  width: 100%;
+  max-width: 1920px !important;
 }
 
 ::-webkit-scrollbar {
@@ -54,5 +62,19 @@ td {
 @media only screen and (max-width: 640px) {
   td {
     font-size: 15px;
+  }
+}
+
+.loading-icon {
+  font-size: 2rem;
+  animation: animate 2s infinite;
+}
+
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(720deg);
   }
 }

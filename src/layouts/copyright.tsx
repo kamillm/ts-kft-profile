@@ -16,9 +16,13 @@ const CopyRight = () => {
         </p>
       </div>
       <div className="flex items-center space-x-3 small:flex-col small:space-y-1">
-        <p>{"Zásady ochrany osobních údajů"}</p>
+        <Link href={"/cookie"}>
+          <p>{"Zásady ochrany osobních údajů"}</p>
+        </Link>
         <div className="h-4 w-[2px] bg-main-900 small:hidden" />
-        <p>Nastavení Cookies</p>
+        <Link href={"/cookie"}>
+          <p>Nastavení Cookies</p>
+        </Link>
       </div>
     </div>
   );

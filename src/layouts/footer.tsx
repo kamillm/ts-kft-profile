@@ -15,7 +15,7 @@ const Footer = () => {
   const { setKind } = useKind();
 
   const onHandleRouter = (item: any) => {
-    if (item.id !== 2) {
+    if (item.type) {
       setKind(item.type);
     }
     router.push(item.href);

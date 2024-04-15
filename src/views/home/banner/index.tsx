@@ -5,7 +5,7 @@ import BannerImge from "@/assets/banner-image.png";
 
 const BannerView = () => {
   return (
-    <div>
+    <div className="relative">
       <div className="relative h-[808px] desktop:h-[700px] tablet:h-[600px]">
         <Image src={BannerImge} fill alt="home-banner" className="w-full h-full object-cover" />
 

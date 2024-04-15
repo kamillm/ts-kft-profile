@@ -8,7 +8,7 @@ export default function Layout({ children }: ComponentProps) {
   return (
     <>
       <Header />
-      {children}
+      <div className="mt-[100px] desktop:mt-[86px]">{children}</div>
       <Container>
         <Contact />
         <Footer />

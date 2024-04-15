@@ -21,25 +21,29 @@ const ScrollTop = () => {
       </Link>
 
       <div className="flex items-center justify-center small:flex-col">
-        <div
-          onClick={() => setKind(!kind)}
-          className={clsx(
-            "cursor-pointer transition duration-300 text-white text-[20px] font-700 p-2 w-[308px] desktop:w-[230px] desktop:text-[15px]",
-            !kind ? "bg-primary hover:bg-red-100" : "bg-main-900 hover:bg-main-900/65"
-          )}
-        >
-          {"Okna a dveře SYNEGO"}
-        </div>
+        <Link href={"#product-banner"}>
+          <div
+            onClick={() => setKind(!kind)}
+            className={clsx(
+              "cursor-pointer transition duration-300 text-white text-[20px] font-700 p-2 w-[308px] desktop:w-[230px] desktop:text-[15px]",
+              !kind ? "bg-primary hover:bg-red-100" : "bg-main-900 hover:bg-main-900/65"
+            )}
+          >
+            {"Okna a dveře SYNEGO"}
+          </div>
+        </Link>
         <div className="bg-white w-1 h-[46px] small:w-full small:h-1" />
-        <div
-          onClick={() => setKind(!kind)}
-          className={clsx(
-            "cursor-pointer text-white transition duration-300 text-[20px] font-700 p-2 w-[308px] text-right desktop:w-[230px] desktop:text-[15px]",
-            kind ? "bg-primary hover:bg-red-100" : "bg-main-900 hover:bg-main-900/65"
-          )}
-        >
-          {"Okna a dveře Briliant-Design"}
-        </div>
+        <Link href={"#product-banner"}>
+          <div
+            onClick={() => setKind(!kind)}
+            className={clsx(
+              "cursor-pointer text-white transition duration-300 text-[20px] font-700 p-2 w-[308px] text-right desktop:w-[230px] desktop:text-[15px]",
+              kind ? "bg-primary hover:bg-red-100" : "bg-main-900 hover:bg-main-900/65"
+            )}
+          >
+            {"Okna a dveře Briliant-Design"}
+          </div>
+        </Link>
       </div>
     </div>
   );

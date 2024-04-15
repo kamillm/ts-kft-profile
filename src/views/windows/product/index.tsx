@@ -11,7 +11,7 @@ const Product = ({ item }: { item: any }) => {
     <Container className="px-32 desktop:px-12 tablet:px-8 mobile:px-6 final:px-4">
       <div className="py-20">
         <div className="flex space-x-10 items-center desktop:flex-col desktop:space-x-0 desktop:space-y-10">
-          <div className="border-2 border-primary w-[553px] h-[553px] shrink-0 mac:w-[400px] mac:h-[400px] mobile:w-[300px] mobile:h-[300px]">
+          <div className="w-[553px] h-[553px] shrink-0 mac:w-[400px] mac:h-[400px] mobile:w-[300px] mobile:h-[300px]">
             <Image src={item.src} width={553} height={553} alt="item" className="w-full h-full object-cover" />
           </div>
 
@@ -42,11 +42,16 @@ const Product = ({ item }: { item: any }) => {
           </span>
         </p>
 
-        <div className={clsx(drop ? "block" : "hidden")}>
+        <div
+          className={clsx(
+            "transition-all duration-300",
+            drop ? "visible opacity-100 backdrop-blur-2xl" : "invisible opacity-0"
+          )}
+        >
           <div
             className={clsx(
-              "flex transition-all duration-300 space-x-10 desktop:flex-col desktop:space-x-0 desktop:space-y-10",
-              drop ? "visible opacity-100 backdrop-blur-2xl" : "invisible opacity-0"
+              drop ? "block" : "hidden",
+              "flex space-x-10 desktop:flex-col desktop:space-x-0 desktop:space-y-10"
             )}
           >
             <table className="w-1/2 desktop:w-full">
